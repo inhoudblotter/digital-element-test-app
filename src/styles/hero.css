@@ -1,0 +1,70 @@
+.hero {
+  position: relative;
+}
+
+.banner {
+  background: linear-gradient(
+    0deg,
+    rgba(152, 195, 232, 20%) 0%,
+    rgba(255, 255, 255, 0%) 24%
+  );
+}
+
+.banner__container {
+  position: relative;
+  padding-top: 190px;
+  padding-bottom: 190px;
+}
+
+.banner__img {
+  position: absolute;
+  top: 90px;
+  right: -70px;
+}
+
+/* CONTENT */
+
+.banner__content {
+  max-width: 510px;
+}
+
+.banner__title {
+  margin: 0 0 32px;
+  font: var(--font-h1);
+  color: var(--color-text);
+}
+
+.banner__text {
+  margin-bottom: 71px;
+  max-width: 90%;
+}
+
+@media (max-width: 1365px) {
+  .banner__img {
+    top: 200px;
+    right: 50px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 1215px) {
+  .banner__img {
+    top: 300px;
+    right: 100px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .banner__img {
+    top: 400px;
+    right: 100px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 750px) {
+  .banner__img {
+    display: none;
+  }
+}

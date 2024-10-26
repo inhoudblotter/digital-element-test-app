@@ -1,0 +1,110 @@
+@import url("./normalize.css");
+@import url("./fonts.css");
+@import url("./variables.css");
+
+body {
+  background-color: var(--color-bg);
+  box-sizing: border-box;
+  min-width: 360px;
+}
+
+.stop-scroll {
+  overflow: hidden;
+}
+
+.modal-root {
+  position: relative;
+  z-index: 1000;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 120px;
+  max-width: 940px;
+}
+
+.btn {
+  padding: 15px 48px;
+  border: none;
+  border-radius: var(--border-radius-m);
+  min-width: 220px;
+  background-color: var(--color-accent-light);
+  font: var(--font-text);
+  color: var(--color-btn-text);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.text,
+.link {
+  margin-top: 0;
+  font: var(--font-text);
+  color: var(--color-text);
+  opacity: 0.6;
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.link--second {
+  color: var(--color-bg);
+}
+
+/* ACTIONS */
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:focus-visible {
+  background-color: var(--color-accent-dark);
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  color: var(--color-accent-dark);
+}
+
+.link--second:focus-visible {
+  color: var(--color-accent-light);
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    background-color: var(--color-accent-dark);
+  }
+
+  .link:hover {
+    color: var(--color-accent-dark);
+  }
+
+  .link--second:hover {
+    color: var(--color-accent-light);
+  }
+}
+
+.btn:active {
+  opacity: 0.7;
+}
+
+.link:active {
+  color: var(--color-accent-light);
+}
+
+.link--second:active {
+  color: var(--color-accent-light);
+  opacity: 0.7;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 20px;
+  }
+}

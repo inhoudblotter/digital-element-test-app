@@ -1,0 +1,24 @@
+:root {
+  --font-h1: 700 54px / 74px serif;
+  --font-h2: 600 36px / 46px "Gilroy", sans-serif;
+  --font-h3: 600 20px "Gilroy", sans-serif;
+  --font-text: 400 16px / 26px "Gilroy", sans-serif;
+  --font-underline: 600 14px "Gilroy", sans-serif;
+  --color-bg: white;
+  --color-title: #316099;
+  --color-text: #1f3f68;
+  --color-accent-dark: #356ead;
+  --color-accent-light: #5a98d0;
+  --color-btn-text: white;
+  --color-error: #ff6961;
+  --border-radius-m: 10px;
+  --border-radius-xxl: 200px;
+  --shadow-out: 5px 20px 50px rgba(16, 112, 177, 20%);
+  --shadow-out-modal: 5px 10px 50px rgba(16, 112, 177, 20%);
+}
+
+@media (max-width: 640px) {
+  :root {
+    --border-radius-xxl: 100px;
+  }
+}

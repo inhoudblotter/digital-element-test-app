@@ -1,0 +1,9 @@
+.success-modal__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--color-bg);
+  padding: 20px;
+  border-radius: var(--border-radius-m);
+  box-shadow: var(--shadow-out-modal);
+}
